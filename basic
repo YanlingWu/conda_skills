@@ -1,0 +1,20 @@
+conda install numpy scipy pandas 的命令会同时安装所有这些包。
+还可以通过添加版本号（例如 conda install numpy=1.10）来指定所需的包版本。
+要卸载包，请使用 conda remove package_name
+要更新包，请使用 conda update package_name
+如果想更新环境中的所有包（这样做常常很有用），请使用 conda update --all
+要列出已安装的包，请使用前面提过的 conda list
+如果不知道要找的包的确切名称，可以尝试使用 conda search search_term 进行搜索
+
+要创建环境，请在终端中使用 conda create -n env_name list of packages。在这里，-n env_name 设置环境的名称（-n 是指名称），
+而 list of packages 是要安装在环境中的包的列表。例如，要创建名为 my_env 的环境并在其中安装 numpy，请键入
+conda create -n my_env numpy。
+
+创建环境时，可以指定要安装在环境中的 Python 版本。这在你同时使用 Python 2.x 和 Python 3.x 中的代码时很有用。
+要创建具有特定 Python 版本的环境，请键入类似于 conda create -n py3 python=3 或 conda create -n py2 python=2 的命令。
+
+使用 conda env list 列出你创建的所有环境
+使用acticate env_name 进去环境
+进入环境以后
+使用desctivate env_name 退出环境
+使用 conda env remove -n env_name 删除指定的环境（在这里名为 env_name）
