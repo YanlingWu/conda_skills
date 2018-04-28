@@ -1,3 +1,6 @@
 安装：
 要在 conda 环境中安装 Jupyter notebook，请使用 conda install jupyter notebook。
 也可以通过 pip 使用 pip install jupyter notebook 来获得 Jupyter notebook。
+
+
+jupyter nbconvert notebook.ipynb --to slides/html/pdf
